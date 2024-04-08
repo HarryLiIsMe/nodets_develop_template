@@ -1,5 +1,5 @@
 {
-  "name": "nodets-develop-template",
+  "name": "nodets_develop_template",
   "version": "1.0.0",
   "scripts": {
     "fmt": "prettier --check 'src/*.ts' 'src/**/*.ts'",
