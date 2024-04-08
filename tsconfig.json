@@ -1,38 +1,43 @@
 {
-  "compilerOptions": {
-    "target": "es2020",
-    "module": "commonjs",
-    "lib": [
-      "ESNext"
-    ],
-    "allowJs": false,
-    "moduleResolution": "Node",
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "allowSyntheticDefaultImports": true,
-    "skipLibCheck": true,
-    "resolveJsonModule": true,
-    "strict": true,
-    "strictPropertyInitialization": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "isolatedModules": true,
-    "useDefineForClassFields": true,
-    "paths": {
-      "@/*": [
-        "./*"
-      ],
-    },
-    "outDir": "dist/commonjs",
-    "baseUrl": "./src"
-  },
-  "ts-node": {
-    "transpileOnly": true
-  },
-  "include": [
-    "src"
-  ],
-  "exclude": [
-    "node_modules"
-  ],
+	"compilerOptions": {
+		"target": "es2020",
+		"module": "commonjs",
+		"lib": [
+			"ESNext"
+		],
+		"allowJs": false,
+		"moduleResolution": "Node",
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"allowSyntheticDefaultImports": true,
+		"skipLibCheck": true,
+		"resolveJsonModule": true,
+		"strict": true,
+		"strictPropertyInitialization": true,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"isolatedModules": true,
+		"useDefineForClassFields": true,
+		"paths": {
+			"@/*": [
+				"./*"
+			],
+		},
+		"outDir": "dist/commonjs",
+		"baseUrl": "./src"
+	},
+	"ts-node": {
+		"require": [
+			"tsconfig-paths/register",
+			"tsconfig-paths/register",
+			"dotenv/config"
+		],
+		"transpileOnly": true
+	},
+	"include": [
+		"src"
+	],
+	"exclude": [
+		"node_modules"
+	],
 }
