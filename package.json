@@ -6,6 +6,7 @@
 		"fmt:fix": "prettier --write 'src/*.ts' 'src/**/*.ts' 'tests/*.ts' 'tests/**/*.ts'",
 		"lint": "eslint 'src/*.ts' 'src/**/*.ts' 'tests/*.ts' 'tests/**/*.ts'",
 		"lint:fix": "eslint --fix 'src/*.ts' 'src/**/*.ts' 'tests/*.ts' 'tests/**/*.ts'",
+        "packs": "",
 		"test": "mocha --config .mocharc.json 'tests/**/*.ts'",
 		"main1": "node -r ts-node/register -r tsconfig-paths/register -r dotenv/config src/main.ts",
 		"main2": "ts-node -r tsconfig-paths/register -r dotenv/config src/main.ts"
