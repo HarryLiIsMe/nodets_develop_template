@@ -8,13 +8,13 @@ async function main() {
 		logInfo('hello');
 		logDebug('world');
 	} catch (err) {
-		console.log(err);
+		logErr("err1:", err);
 	}
 }
 
 // We recommend this pattern to be able to use async/await everywhere
 // and properly handle errors.
-main().catch((error) => {
-	logErr(error);
+main().catch((err) => {
+	logErr("err2:", err);
 	process.exitCode = 1;
 });
