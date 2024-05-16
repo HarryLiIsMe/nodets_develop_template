@@ -4,17 +4,17 @@ const logInfo = Debug('info');
 const logErr = Debug('error');
 
 async function main() {
-	try {
-		logInfo('hello');
-		logDebug('world');
-	} catch (err) {
-		logErr("err1:", err);
-	}
+    try {
+        logInfo('hello');
+        logDebug('world');
+    } catch (err1) {
+        logErr('err1:', err1);
+    }
 }
 
 // We recommend this pattern to be able to use async/await everywhere
 // and properly handle errors.
-main().catch((err) => {
-	logErr("err2:", err);
-	process.exitCode = 1;
+main().catch((err2) => {
+    logErr('err2:', err2);
+    process.exitCode = 1;
 });
