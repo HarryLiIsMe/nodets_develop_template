@@ -1,12 +1,17 @@
 import Debug from 'debug';
+
 const logDebug = Debug('debug');
 const logInfo = Debug('info');
 const logErr = Debug('error');
 
 async function main() {
     try {
+        const project_name =
+            process.env.PROJECT_NAME || 'NODETS_DEVELOP_TEMPLATE';
+
         logInfo('hello');
         logDebug('world');
+        logErr(project_name);
     } catch (err1) {
         logErr('err1: ', err1);
     }
