@@ -9,8 +9,8 @@
 		"packs": "echo packs",
 		"clean": "echo clean",
 		"test": "mocha --config .mocharc.json 'tests/**/*.ts'",
-		"main1": "node -r ts-node/register -r tsconfig-paths/register -r dotenv/config src/main.ts",
-		"main2": "ts-node -r tsconfig-paths/register -r dotenv/config src/main.ts"
+		"main1": "Debug=debug,error node -r ts-node/register -r tsconfig-paths/register -r dotenv/config src/main.ts",
+		"main2": "Debug=debug,error ts-node -r tsconfig-paths/register -r dotenv/config src/main.ts"
 	},
 	"license": "MIT",
 	"dependencies": {
