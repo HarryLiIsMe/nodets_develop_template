@@ -6,12 +6,15 @@ const logErr = Debug('error');
 
 async function main() {
     try {
-        const project_name =
-            process.env.PROJECT_NAME || 'NODETS_DEVELOP_TEMPLATE';
+        if(process.env.PROJECT_NAME) {
+            const project_name = process.env.PROJECT_NAME;
 
-        logInfo('hello');
-        logDebug('world');
-        logErr(project_name);
+            logInfo('hello');
+            logDebug('world');
+            logErr(project_name);
+        } else {
+            throw "env load failed!!!";
+        }
     } catch (err1) {
         logErr('err1: ', err1);
     }
