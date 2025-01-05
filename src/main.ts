@@ -6,7 +6,7 @@ const logErr = Debug('error');
 
 async function main() {
     try {
-        if(process.env.PROJECT_NAME) {
+        if (process.env.PROJECT_NAME) {
             const project_name = process.env.PROJECT_NAME;
 
             logInfo('hello');
