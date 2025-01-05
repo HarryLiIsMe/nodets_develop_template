@@ -2,13 +2,13 @@
 	"name": "nodets_develop_template",
 	"version": "1.0.0",
 	"scripts": {
-		"fmt": "prettier --config .prettierrc.json --check 'src/*.ts' 'src/**/*.ts' 'tests/*.ts' 'tests/**/*.ts' '.eslintrc.js'",
-		"fmt:fix": "prettier --config .prettierrc.json --write 'src/*.ts' 'src/**/*.ts' 'tests/*.ts' 'tests/**/*.ts' '.eslintrc.js'",
-		"lint": "eslint -c .eslintrc.js",
-		"lint:fix": "eslint -c .eslintrc.js --fix",
+		"fmt": "pnpx prettier --config .prettierrc.json --check 'src/*.ts' 'src/**/*.ts' 'tests/*.ts' 'tests/**/*.ts' '.eslintrc.js'",
+		"fmt:fix": "pnpx prettier --config .prettierrc.json --write 'src/*.ts' 'src/**/*.ts' 'tests/*.ts' 'tests/**/*.ts' '.eslintrc.js'",
+		"lint": "pnpx eslint -c .eslintrc.js",
+		"lint:fix": "pnpx eslint -c .eslintrc.js --fix",
 		"packs": "echo packs",
 		"clean": "echo clean",
-		"test": "mocha --config .mocharc.json 'tests/**/*.ts'",
+		"test": "pnpx mocha --config .mocharc.json 'tests/**/*.ts'",
 		"main1": "DEBUG=debug,error node -r ts-node/register -r tsconfig-paths/register -r dotenv/config src/main.ts",
 		"main2": "DEBUG=debug,error ts-node -r tsconfig-paths/register -r dotenv/config src/main.ts"
 	},
