@@ -13,7 +13,7 @@ async function main() {
             logDebug('world');
             logErr(project_name);
         } else {
-            throw "env load failed!!!";
+            throw 'env load failed!!!';
         }
     } catch (err1) {
         logErr('err1: ', err1);
