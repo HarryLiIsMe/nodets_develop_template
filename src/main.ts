@@ -15,14 +15,14 @@ async function main() {
         } else {
             throw 'env load failed!!!';
         }
-    } catch (err1) {
-        logErr('err1: ', err1);
+    } catch (e) {
+        logErr('err1: ', (e as Error).stack ?? e);
     }
 }
 
 // We recommend this pattern to be able to use async/await everywhere
 // and properly handle errors.
-main().catch((err2) => {
-    logErr('err2: ', err2);
+main().catch((e) => {
+    logErr('err2: ', (e as Error).stack ?? e);
     process.exitCode = 1;
 });

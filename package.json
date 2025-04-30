@@ -7,9 +7,10 @@
 		"lint": "npx eslint -c .eslintrc.js",
 		"lint:fix": "npx eslint -c .eslintrc.js --fix",
 		"packs": "echo packs",
-		"build": "",
-		"build_bin": "nexe ",
-		"clean": "echo clean",
+		"build": "webpack",
+		"obfus": "javascript-obfuscator",
+		"build_bin": "nexe",
+		"clean": "rimraf",
 		"test": "npx mocha --config .mocharc.json 'tests/**/*.ts'",
 		"main1": "DEBUG=debug,error node -r ts-node/register -r tsconfig-paths/register -r dotenv/config src/main.ts",
 		"main2": "DEBUG=debug,error ts-node -r tsconfig-paths/register -r dotenv/config src/main.ts"
@@ -42,6 +43,8 @@
 		"eslint-import-resolver-typescript": "^3.7.0",
 		"eslint-plugin-import": "^2.31.0",
 		"eslint-plugin-prettier": "^5.2.1",
+		"gulp-javascript-obfuscator": "^1.1.6",
+		"javascript-obfuscator": "^4.1.1",
 		"make-dir-cli": "^3.1.0",
 		"mocha": "^10.8.2",
 		"nexe": "5.0.0-beta.4",
@@ -51,6 +54,7 @@
 		"prettier-plugin-organize-imports": "^3.2.4",
 		"rimraf": "^5.0.10",
 		"rollup": "^4.40.1",
+		"rollup-plugin-javascript-obfuscator": "^1.0.4",
 		"ts-loader": "^9.5.2",
 		"ts-node": "^10.9.2",
 		"tsconfig-paths": "^4.2.0",
@@ -60,6 +64,7 @@
 		"wait-on": "^7.2.0",
 		"webpack": "^5.99.7",
 		"webpack-cli": "^6.0.1",
-		"webpack-dev-server": "^5.2.1"
+		"webpack-dev-server": "^5.2.1",
+		"webpack-obfuscator": "^3.5.1"
 	}
 }

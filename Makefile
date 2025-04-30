@@ -10,6 +10,15 @@ update:
 packs:
 	pnpm run packs
 
+build:
+	pnpm run build
+	
+obfus:
+	pnpm run obfus
+
+build_bin:
+	pnpm run build_bin
+
 run1:
 	pnpm run main1
 
