@@ -1,3 +1,5 @@
+import 'source-map-support/register';
+
 import Debug from 'debug';
 
 const logDebug = Debug('debug');

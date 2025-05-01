@@ -10,9 +10,15 @@ update:
 packs:
 	pnpm run packs
 
-build:
-	pnpm run build
-	
+build1:
+	pnpm run build1
+
+build2:
+	pnpm run build2
+
+build3:
+	pnpm run build3
+
 obfus:
 	pnpm run obfus
 
